@@ -5,7 +5,7 @@ require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
-const patientRouters = require('./src/routers/patientRouters')
+const routes = require('./src/routes');
 
 // forma de ler JSON / middlewares
 app.use(
@@ -17,14 +17,7 @@ app.use(
 app.use(express.json())
 
 // rotas API
-app.use('/patient', patientRouters)
-
-// rota inicial / endpoint
-app.get('/', (req, res) => {
-  // mostrar req
-
-  res.json({ message: 'Hello Express!' })
-})
+app.use(routes)
 
 // entregar uma porta
 mongoose
