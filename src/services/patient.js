@@ -1,7 +1,7 @@
 const Patient = require('../models/Patient')
 
 // Manipulação do banco de dados.
-const betService = {
+const patientService = {
     findAll: async (req, res) => {},
     findOne: async (id) => {},
     save: async (payload) => {},
@@ -9,4 +9,4 @@ const betService = {
     remove: async (id) => {}
 }
 
-export default betService;
+module.exports = patientService;
