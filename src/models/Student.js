@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose')
 
-const patientSchema = new Schema({
+const studentSchema = new Schema({
   ra: { type: Number, required: true },
   name: { type: String, required: true },
   lastName: { type: String, required: true },
@@ -10,4 +10,4 @@ const patientSchema = new Schema({
   active: { type: Boolean, required: true, default: true }
 })
 
-module.exports = model('Patient', patientSchema);
+module.exports = model('Student', studentSchema);
