@@ -22,7 +22,7 @@ app.use(routes)
 // entregar uma porta
 mongoose
   .connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@apicluster.fvvowt3.mongodb.net/bancodaapi?retryWrites=true&w=majority`
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@gelpclinicas.o4wn19p.mongodb.net/GelpClinicas?retryWrites=true&w=majority`
   ) // Database connection
   .then(() => {
     console.log('Connection to MongoDB [SUCCESS]')

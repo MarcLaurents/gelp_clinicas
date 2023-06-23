@@ -7,7 +7,7 @@ const studentSchema = new Schema({
   birthDate: { type: String, required: true },
   gender: { type: String, required: true },
   email: { type: String, required: true },
-  active: { type: Number, required: true, default: true }
+  active: { type: Boolean, required: true, default: true }
 })
 
 module.exports = model('Student', studentSchema);
